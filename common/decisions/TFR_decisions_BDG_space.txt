@@ -1,0 +1,19 @@
+decisions_BGD_space = {
+    BGD_change_space = {
+		icon = GFX_Banned_Moderates
+		name = BGD_decisions_BGD_space
+		fire_only_once = no
+		days_re_enable = 1
+		cost = 0
+		allowed = {
+			always = yes
+		}
+		visible = {
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+			}
+		}
+	}

@@ -1,0 +1,11 @@
+decisions_BGD_space = {
+	priority = 100000
+	icon = GFX_gui_ppp_party_small
+	
+	
+	visible = {
+		has_country_flag = space_up
+	}
+	
+	scripted_gui = bgd_space_guis
+}
