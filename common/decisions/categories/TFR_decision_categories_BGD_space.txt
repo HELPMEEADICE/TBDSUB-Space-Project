@@ -5,7 +5,10 @@ decisions_BGD_space = {
 	
 	visible = {
 		has_country_flag = space_up
+		NOT = {
+			has_country_flag = space_second_step
+		}
 	}
 	
-	scripted_gui = bgd_space_guis
+	scripted_gui = bgd_space_first_guis
 }

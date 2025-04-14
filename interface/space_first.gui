@@ -1,0 +1,74 @@
+guiTypes = {
+	containerWindowType = {
+		name = "bgd_space_first_guis"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 100%
+			height = 750
+		}
+
+		iconType = {
+			name = "background"
+			spriteType = "GFX_gui_BGD_space_phase_1"
+			position = {
+				x = -6
+				y = -17
+			}
+		}
+		instantTextBoxType = {
+			name = "desc"
+			font = "VCR02_16"
+			text = desc_first_main
+			maxWidth = 435
+			position = {
+				x = 28
+				y = 200
+			}
+		}
+		#火箭
+		iconType = {
+			name = "progressbar_rocket"
+			spriteType = "GFX_gui_BGD_space_progressbar"
+			position = {
+				x = 33
+				y = 500
+			}
+		}
+		instantTextBoxType = {
+			name = "progressbar_rocket_text"
+			font = "VCR02_26"
+			text = rocket_progress_text
+			maxWidth = 500
+			maxHeight = 30
+			position = {
+				x = 33
+				y = 450
+			}
+			pdx_tooltip = desc_first_rocket
+		}
+		#新加坡基地
+		iconType = {
+			name = "progressbar_sgp_base"
+			spriteType = "GFX_gui_BGD_space_progressbar"
+			position = {
+				x = 33
+				y = 630
+			}
+		}
+		instantTextBoxType = {
+			name = "sgp_base_progress_text"
+			font = "VCR02_26"
+			text = "sgp_base_complete_text"
+			maxWidth = 500
+			maxHeight = 30
+			position = {
+				x = 33
+				y = 580
+			}
+			pdx_tooltip = desc_first_sgp_base
+		}
+	}
+}

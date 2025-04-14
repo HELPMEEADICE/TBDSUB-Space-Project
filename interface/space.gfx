@@ -1,3 +1,18 @@
 spriteTypes = {
-	
+	progressbarType = {
+		name = "GFX_gui_BGD_space_progressbar"
+		textureFile1 = "gfx\interface\BGD\space_gui\progressbar_full.dds"
+		textureFile2 = "gfx\interface\BGD\space_gui\progressbar_empty.dds"
+		size = {x = 422 y = 49}
+		effectFile = "gfx/FX/progress.shader"
+		horizontal = yes
+		#steps = 100
+
+		#color = { 255 255 255 }
+		#colortwo = { 151 32 161 }
+	}
+	spriteType = {
+		name = "GFX_gui_BGD_space_phase_1"
+		textureFile = "gfx\interface\BGD\space_gui\first.png"
+	}
 }

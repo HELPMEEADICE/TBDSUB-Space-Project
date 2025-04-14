@@ -1,7 +1,7 @@
 decisions_BGD_space = {
-    BGD_change_space = {
+    BGD_change_space_first = {
 		icon = GFX_Banned_Moderates
-		name = BGD_decisions_BGD_space
+		name = BGD_decisions_BGD_space_first
 		fire_only_once = no
 		days_re_enable = 1
 		cost = 0
@@ -11,7 +11,7 @@ decisions_BGD_space = {
 		visible = {
 		}
 		available = {
-			always = no
+			has_country_flag = space_first_over
 		}
 		complete_effect = {
 			}

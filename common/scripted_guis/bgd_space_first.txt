@@ -1,0 +1,17 @@
+scripted_gui = {
+	bgd_space_first_guis = {
+		context_type = decision_category
+		window_name = "bgd_space_first_guis"
+		effects = {
+
+		}
+		properties = {
+			progressbar_rocket = {
+				frame = rocket_complete_var
+			}
+			progressbar_sgp_base = {
+				frame = sgp_base_complete_var
+			}
+		}
+	}
+}
