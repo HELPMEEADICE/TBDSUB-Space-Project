@@ -11,8 +11,64 @@ spriteTypes = {
 		#color = { 255 255 255 }
 		#colortwo = { 151 32 161 }
 	}
+
+	progressbarType = {
+		name = "GFX_gui_BGD_rocket_progressbar"
+		textureFile1 = "gfx\interface\BGD\space_gui\rocket_full.dds"
+		textureFile2 = "gfx\interface\BGD\space_gui\rocket.dds"
+		size = {x = 128 y = 499}
+		effectFile = "gfx/FX/progress.shader"
+		horizontal = no
+	}
+
+	progressbarType = {
+		name = "GFX_gui_BGD_rocket_progressbar"
+		textureFile1 = "gfx\interface\BGD\space_gui\rocket_full.dds"
+		textureFile2 = "gfx\interface\BGD\space_gui\rocket.dds"
+		size = {x = 128 y = 499}
+		effectFile = "gfx/FX/progress.shader"
+		horizontal = no
+	}
+
+	progressbarType = {
+		name = "GFX_gui_BGD_ring_progressbar"
+		textureFile1 = "gfx\interface\BGD\space_gui\ring_positive_full.dds"
+		textureFile2 = "gfx\interface\BGD\space_gui\ring_positive_empty.dds"
+		size = {x = 132 y = 134}
+		effectFile = "gfx/FX/progress_radial.shader"
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_gui_BGD_warning"
+		textureFile = "gfx\interface\BGD\space_gui\redgreen.png"
+		noOfFrames = 2
+		animation_rate_fps = 2
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+
+
+	spriteType = {
+		name = "GFX_gui_BGD_rocket_progressbar_divider"
+		textureFile = "gfx\interface\BGD\space_gui\divider.png"
+	}
 	spriteType = {
 		name = "GFX_gui_BGD_space_phase_1"
 		textureFile = "gfx\interface\BGD\space_gui\first.png"
 	}
+
+	spriteType = {
+		name = "GFX_gui_BGD_space_phase_2"
+		textureFile = "gfx\interface\BGD\space_gui\second.png"
+	}
+	spriteType = {
+		name = "GFX_BGD_start_event"
+		textureFile = "gfx\interface\BGD\space_gui\romulus_project.png"
+	}
+	spriteType = {
+		name = "GFX_BGD_info"
+		textureFile = "gfx\interface\BGD\space_gui\info.png"
+	}
+	
 }

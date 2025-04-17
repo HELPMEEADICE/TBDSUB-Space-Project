@@ -1,0 +1,18 @@
+decisions_BGD_space_second = {
+    BGD_change_space_second = {
+		icon = GFX_Banned_Moderates
+		name = BGD_decisions_BGD_space_second
+		fire_only_once = yes
+		cost = 50
+		allowed = {
+			always = yes
+		}
+		visible = {
+		}
+		available = {
+			has_country_flag = space_second_over
+		}
+		complete_effect = {
+		}
+	}
+} 

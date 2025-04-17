@@ -1,0 +1,20 @@
+scripted_gui = {
+	bgd_space_second_guis = {
+		context_type = decision_category
+		window_name = "bgd_space_second_guis"
+		effects = {
+
+		}
+		properties = {
+			rocket_progressbar = {
+				frame = rocket_progress_var
+			}
+			human_progressbar = {
+				frame = human_progress_var
+			}
+			supplies_progressbar = {
+				frame = supplies_progress_var
+			}
+		}
+	}
+}

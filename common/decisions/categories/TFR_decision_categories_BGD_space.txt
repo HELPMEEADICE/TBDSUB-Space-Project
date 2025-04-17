@@ -1,12 +1,12 @@
 decisions_BGD_space = {
-	priority = 100000
+	priority = 100005
 	icon = GFX_gui_ppp_party_small
 	
 	
 	visible = {
 		has_country_flag = space_up
 		NOT = {
-			has_country_flag = space_second_step
+			has_country_flag = space_second_up
 		}
 	}
 	

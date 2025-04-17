@@ -2,9 +2,8 @@ decisions_BGD_space = {
     BGD_change_space_first = {
 		icon = GFX_Banned_Moderates
 		name = BGD_decisions_BGD_space_first
-		fire_only_once = no
-		days_re_enable = 1
-		cost = 0
+		fire_only_once = yes
+		cost = 50
 		allowed = {
 			always = yes
 		}
@@ -14,6 +13,497 @@ decisions_BGD_space = {
 			has_country_flag = space_first_over
 		}
 		complete_effect = {
-			}
+			set_country_flag = space_second_up
 		}
 	}
+	BGD_compelted_first = {
+		icon = GFX_Banned_Moderates
+		name = BGD_compelted_first
+		fire_only_once = yes
+		cost = 10
+		allowed = {
+			always = yes
+		}
+		visible = {
+			has_country_flag = rocket_complete
+			has_country_flag = base_complete
+		}
+		available = {
+			has_country_flag = rocket_complete
+			has_country_flag = base_complete
+		}
+		complete_effect = {
+			set_country_flag = space_first_over
+		}
+	}
+	#火箭设计
+	#总体构型设计
+	BGD_rocket_system_architecture = {
+		icon = GFX_Banned_Moderates
+		name = BGD_rocket_system_architecture
+		days_remove = 100
+		fire_only_once = yes
+		cost = 600
+		allowed = {
+			NOT = { has_country_flag = rocket_system_architecture_ok }
+		}
+		visible = {
+		}
+		available = {
+			NOT = { has_country_flag = rocket_system_architecture_ok }
+		}
+		remove_effect = {
+			add_to_variable = { rocket_complete_var = 20 }
+			set_country_flag = rocket_system_architecture_ok
+		}
+	}
+	#推进系统
+	BGD_rocket_propulsion = {
+		icon = GFX_Banned_Moderates
+		name = BGD_rocket_propulsion
+		days_remove = 30
+		fire_only_once = yes
+		cost = 200
+		allowed = {
+			has_country_flag = rocket_system_architecture_ok
+		}
+		visible = {
+			has_country_flag = rocket_system_architecture_ok
+			NOT = { has_country_flag = rocket_in_research }
+		}
+		available = {
+			has_country_flag = rocket_system_architecture_ok
+		}
+		complete_effect = {
+			set_country_flag = rocket_in_research
+		}
+		remove_effect = {
+			add_to_variable = { rocket_complete_var = 10 }
+			clr_country_flag = rocket_in_research
+		}
+	}
+	#结构系统
+	BGD_rocket_structure = {
+		icon = GFX_Banned_Moderates
+		name = BGD_rocket_structure
+		days_remove = 30
+		fire_only_once = yes
+		cost = 200
+		allowed = {
+			has_country_flag = rocket_system_architecture_ok
+			NOT = { has_country_flag = rocket_in_research }
+		}
+		visible = {
+			has_country_flag = rocket_system_architecture_ok
+			NOT = { has_country_flag = rocket_in_research }
+		}
+		available = {
+			has_country_flag = rocket_system_architecture_ok
+			NOT = { has_country_flag = rocket_in_research }
+		}
+		complete_effect = {
+			set_country_flag = rocket_in_research
+		}
+		remove_effect = {
+			add_to_variable = { rocket_complete_var = 10 }
+			clr_country_flag = rocket_in_research
+		}
+	}
+	#推进剂与推进剂管理系统
+	BGD_rocket_propellant_management = {
+		icon = GFX_Banned_Moderates
+		name = BGD_rocket_propellant_management
+		days_remove = 30
+		fire_only_once = yes
+		cost = 200
+		allowed = {
+			has_country_flag = rocket_system_architecture_ok
+			NOT = { has_country_flag = rocket_in_research }
+		}
+		visible = {
+			has_country_flag = rocket_system_architecture_ok
+			NOT = { has_country_flag = rocket_in_research }
+		}
+		available = {
+			has_country_flag = rocket_system_architecture_ok
+			NOT = { has_country_flag = rocket_in_research }
+		}
+		complete_effect = {
+			set_country_flag = rocket_in_research
+		}
+		remove_effect = {
+			add_to_variable = { rocket_complete_var = 10 }
+			clr_country_flag = rocket_in_research
+		}
+	}
+	#制导、导航与控制系统
+	BGD_rocket_GNC = {
+		icon = GFX_Banned_Moderates
+		name = BGD_rocket_GNC
+		days_remove = 30
+		fire_only_once = yes
+		cost = 200
+		allowed = {
+			has_country_flag = rocket_system_architecture_ok
+			NOT = { has_country_flag = rocket_in_research }
+		}
+		visible = {
+			has_country_flag = rocket_system_architecture_ok
+			NOT = { has_country_flag = rocket_in_research }
+		}
+		available = {
+			has_country_flag = rocket_system_architecture_ok
+			NOT = { has_country_flag = rocket_in_research }
+		}
+		complete_effect = {
+			set_country_flag = rocket_in_research
+		}
+		remove_effect = {
+			add_to_variable = { rocket_complete_var = 10 }
+			clr_country_flag = rocket_in_research
+		}
+	}
+	#任务载荷接口
+	BGD_rocket_payload_and_fairing = {
+		icon = GFX_Banned_Moderates
+		name = BGD_rocket_payload_and_fairing
+		days_remove = 30
+		fire_only_once = yes
+		cost = 200
+		allowed = {
+			has_country_flag = rocket_system_architecture_ok
+			NOT = { has_country_flag = rocket_in_research }
+		}
+		visible = {
+			has_country_flag = rocket_system_architecture_ok
+			NOT = { has_country_flag = rocket_in_research }
+		}
+		available = {
+			has_country_flag = rocket_system_architecture_ok
+			NOT = { has_country_flag = rocket_in_research }
+		}
+		complete_effect = {
+			set_country_flag = rocket_in_research
+		}
+		remove_effect = {
+			add_to_variable = { rocket_complete_var = 10 }
+			clr_country_flag = rocket_in_research
+		}
+	}
+	#地面支持系统
+	BGD_rocket_GSE = {
+		icon = GFX_Banned_Moderates
+		name = BGD_rocket_GSE
+		days_remove = 30
+		fire_only_once = yes
+		cost = 200
+		allowed = {
+			has_country_flag = rocket_system_architecture_ok
+			NOT = { has_country_flag = rocket_in_research }
+		}
+		visible = {
+			has_country_flag = rocket_system_architecture_ok
+			NOT = { has_country_flag = rocket_in_research }
+		}
+		available = {
+			has_country_flag = rocket_system_architecture_ok
+			NOT = { has_country_flag = rocket_in_research }
+		}
+		complete_effect = {
+			set_country_flag = rocket_in_research
+		}
+		remove_effect = {
+			add_to_variable = { rocket_complete_var = 10 }
+			clr_country_flag = rocket_in_research
+		}
+	}
+	#制造与装配工艺
+	BGD_rocket_manufacturing = {
+		icon = GFX_Banned_Moderates
+		name = BGD_rocket_manufacturing
+		days_remove = 30
+		fire_only_once = yes
+		cost = 200
+		allowed = {
+			has_country_flag = rocket_system_architecture_ok
+			NOT = { has_country_flag = rocket_in_research }
+		}
+		visible = {
+			has_country_flag = rocket_system_architecture_ok
+			NOT = { has_country_flag = rocket_in_research }
+		}
+		available = {
+			has_country_flag = rocket_system_architecture_ok
+			NOT = { has_country_flag = rocket_in_research }
+		}
+		complete_effect = {
+			set_country_flag = rocket_in_research
+		}
+		remove_effect = {
+			add_to_variable = { rocket_complete_var = 10 }
+			clr_country_flag = rocket_in_research
+		}
+	}
+	#测试验证与可靠性评估
+	BGD_rocket_test = {
+		icon = GFX_Banned_Moderates
+		name = BGD_rocket_test
+		days_remove = 30
+		fire_only_once = yes
+		cost = 200
+		allowed = {
+			has_country_flag = rocket_system_architecture_ok
+			check_variable = { rocket_complete_var = 90 }
+		}
+		visible = {
+			has_country_flag = rocket_system_architecture_ok
+		}
+		available = {
+			has_country_flag = rocket_system_architecture_ok
+			check_variable = { rocket_complete_var = 90 }
+		}
+		remove_effect = {
+			add_to_variable = { rocket_complete_var = 10 }
+			set_country_flag = rocket_complete
+		}
+	}
+
+
+
+	#新加坡航天基地建设
+	#规划建设
+	BGD_sgp_planning_building = {
+		icon = GFX_Banned_Moderates
+		name = BGD_sgp_planning_building
+		days_remove = 100
+		fire_only_once = yes
+		cost = 200
+		allowed = {
+			NOT = { has_country_flag = sgp_planning_ok }
+		}
+		visible = {
+		}
+		available = {
+			NOT = { has_country_flag = sgp_planning_ok }
+			SIG = {
+				has_country_flag = APFNO_member
+			}
+		}
+		remove_effect = {
+			add_to_variable = { sgp_base_complete_var = 20 }
+			set_country_flag = sgp_planning_ok
+		}
+	}
+	#发射台
+	BGD_sgp_launch_pad = {
+		icon = GFX_Banned_Moderates
+		name = BGD_sgp_launch_pad
+		days_remove = 30
+		fire_only_once = yes
+		cost = 100
+		allowed = {
+			has_country_flag = sgp_planning_ok
+			NOT = { has_country_flag = sgp_in_building }
+		}
+		visible = {
+			has_country_flag = sgp_planning_ok
+			NOT = { has_country_flag = sgp_in_building }
+		}
+		available = {
+			has_country_flag = sgp_planning_ok
+			NOT = { has_country_flag = sgp_in_building }
+		}
+		complete_effect = {
+			set_country_flag = sgp_in_building
+		}
+		remove_effect = {
+			add_to_variable = { sgp_base_complete_var = 10 }
+			clr_country_flag = sgp_in_building
+		}
+	}
+	#火箭垂直总装大楼
+	BGD_sgp_VAB = {
+		icon = GFX_Banned_Moderates
+		name = BGD_sgp_VAB
+		days_remove = 30
+		fire_only_once = yes
+		cost = 100
+		allowed = {
+			has_country_flag = sgp_planning_ok
+			NOT = { has_country_flag = sgp_in_building }
+		}
+		visible = {
+			has_country_flag = sgp_planning_ok
+			NOT = { has_country_flag = sgp_in_building }
+		}
+		available = {
+			has_country_flag = sgp_planning_ok
+			NOT = { has_country_flag = sgp_in_building }
+		}
+		complete_effect = {
+			set_country_flag = sgp_in_building
+		}
+		remove_effect = {
+			add_to_variable = { sgp_base_complete_var = 10 }
+			clr_country_flag = sgp_in_building
+		}
+	}
+	#有效载荷处理设施
+	BGD_sgp_PPF = {
+		icon = GFX_Banned_Moderates
+		name = BGD_sgp_PPF
+		days_remove = 30
+		fire_only_once = yes
+		cost = 100
+		allowed = {
+			has_country_flag = sgp_planning_ok
+			NOT = { has_country_flag = sgp_in_building }
+		}
+		visible = {
+			has_country_flag = sgp_planning_ok
+			NOT = { has_country_flag = sgp_in_building }
+		}
+		available = {
+			has_country_flag = sgp_planning_ok
+			NOT = { has_country_flag = sgp_in_building }
+		}
+		complete_effect = {
+			set_country_flag = sgp_in_building
+		}
+		remove_effect = {
+			add_to_variable = { sgp_base_complete_var = 10 }
+			clr_country_flag = sgp_in_building
+		}
+	}
+	#任务控制中心
+	BGD_sgp_MCC = {
+		icon = GFX_Banned_Moderates
+		name = BGD_sgp_MCC
+		days_remove = 30
+		fire_only_once = yes
+		cost = 100
+		allowed = {
+			has_country_flag = sgp_planning_ok
+			NOT = { has_country_flag = sgp_in_building }
+		}
+		visible = {
+			has_country_flag = sgp_planning_ok
+			NOT = { has_country_flag = sgp_in_building }
+		}
+		available = {
+			has_country_flag = sgp_planning_ok
+			NOT = { has_country_flag = sgp_in_building }
+		}
+		complete_effect = {
+			set_country_flag = sgp_in_building
+		}
+		remove_effect = {
+			add_to_variable = { sgp_base_complete_var = 10 }
+			clr_country_flag = sgp_in_building
+		}
+	}
+	#测控与通信系统
+	BGD_sgp_TCS = {
+		icon = GFX_Banned_Moderates
+		name = BGD_sgp_TCS
+		days_remove = 30
+		fire_only_once = yes
+		cost = 100
+		allowed = {
+			has_country_flag = sgp_planning_ok
+			NOT = { has_country_flag = sgp_in_building }
+		}
+		visible = {
+			has_country_flag = sgp_planning_ok
+			NOT = { has_country_flag = sgp_in_building }
+		}
+		available = {
+			has_country_flag = sgp_planning_ok
+			NOT = { has_country_flag = sgp_in_building }
+		}
+		complete_effect = {
+			set_country_flag = sgp_in_building
+		}
+		remove_effect = {
+			add_to_variable = { sgp_base_complete_var = 10 }
+			clr_country_flag = sgp_in_building
+		}
+	}
+	#安全系统与发射禁区
+	BGD_sgp_RSS = {
+		icon = GFX_Banned_Moderates
+		name = BGD_sgp_RSS
+		days_remove = 30
+		fire_only_once = yes
+		cost = 100
+		allowed = {
+			has_country_flag = sgp_planning_ok
+			NOT = { has_country_flag = sgp_in_building }
+		}
+		visible = {
+			has_country_flag = sgp_planning_ok
+			NOT = { has_country_flag = sgp_in_building }
+		}
+		available = {
+			has_country_flag = sgp_planning_ok
+			NOT = { has_country_flag = sgp_in_building }
+		}
+		complete_effect = {
+			set_country_flag = sgp_in_building
+		}
+		remove_effect = {
+			add_to_variable = { sgp_base_complete_var = 10 }
+			clr_country_flag = sgp_in_building
+		}
+	}
+	#推进剂储存和处理设施
+	BGD_sgp_PSHF = {
+		icon = GFX_Banned_Moderates
+		name = BGD_sgp_PSHF
+		days_remove = 30
+		fire_only_once = yes
+		cost = 100
+		allowed = {
+			has_country_flag = sgp_planning_ok
+			NOT = { has_country_flag = sgp_in_building }
+		}
+		visible = {
+			has_country_flag = sgp_planning_ok
+			NOT = { has_country_flag = sgp_in_building }
+		}
+		available = {
+			has_country_flag = sgp_planning_ok
+			NOT = { has_country_flag = sgp_in_building }
+		}
+		complete_effect = {
+			set_country_flag = sgp_in_building
+		}
+		remove_effect = {
+			add_to_variable = { sgp_base_complete_var = 10 }
+			clr_country_flag = sgp_in_building
+		}
+	}
+	#建设完成
+	BGD_sgp_completed = {
+		icon = GFX_Banned_Moderates
+		name = BGD_sgp_completed
+		days_remove = 30
+		fire_only_once = yes
+		cost = 200
+		allowed = {
+			has_country_flag = sgp_planning_ok
+			check_variable = { sgp_base_complete_var = 90 }
+		}
+		visible = {
+			has_country_flag = sgp_planning_ok
+		}
+		available = {
+			has_country_flag = sgp_planning_ok
+			check_variable = { sgp_base_complete_var = 90 }
+		}
+		remove_effect = {
+			add_to_variable = { sgp_base_complete_var = 10 }
+			set_country_flag = base_complete
+		}
+	}
+} 

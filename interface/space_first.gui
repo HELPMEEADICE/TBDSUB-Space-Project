@@ -28,6 +28,22 @@ guiTypes = {
 				y = 200
 			}
 		}
+		instantTextBoxType = {
+			name = "slogan"
+			font = "VCR02_36"
+			text = slogan_first
+			maxWidth = 500
+			position = {
+				x = -3
+				y = 705
+			}
+			format = center
+			orientation = DOWN
+			pdx_tooltip = desc_slogan_first
+		}
+
+
+		
 		#火箭
 		iconType = {
 			name = "progressbar_rocket"

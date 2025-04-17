@@ -1,0 +1,124 @@
+guiTypes = {
+	containerWindowType = {
+		name = "bgd_space_second_guis"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 100%
+			height = 750
+		}
+
+		iconType = {
+			name = "background"
+			spriteType = "GFX_gui_BGD_space_phase_2"
+			position = {
+				x = -6
+				y = -17
+			}
+		}
+
+		iconType = {
+			name = "rocket_progressbar"
+			spriteType = "GFX_gui_BGD_rocket_progressbar"
+			position = {
+				x = 185
+				y = 150
+			}
+		}
+		iconType = {
+			name = "info"
+			spriteType = "GFX_BGD_info"
+			scale = 0.8
+			position = {
+				x = 400
+				y = 700
+			}
+			pdx_tooltip = "desc_deltav"
+		}
+		instantTextBoxType = {
+			name = "deltav"
+			font = "VCR02_26"
+			text = Δv:[?deltav|Y]m/s
+			position = { x = 265 y = 700 }
+			maxWidth = 135
+		}
+
+		#环状进度条
+		containerWindowType = {
+			name = "ring_progressbar"
+			position = {
+				x = 35
+				y = 250
+			}
+			containerWindowType = {
+				name = "human_progress"
+				iconType = {
+					name = "human_progressbar"
+					spriteType = "GFX_gui_BGD_ring_progressbar"
+				}
+				instantTextBoxType = {
+					name = "human_progresstext"
+					font = "VCR02_26"
+					text = [?human_progress_var|Y]
+					position = { x = -33 y = 55}
+					format = center
+				}
+				instantTextBoxType = {
+					name = "human_text"
+					font = "VCR02_26"
+					text = human_progress
+					position = { x = -33 y = 135}
+					format = center
+				}
+			}
+			containerWindowType = {
+				name = "supplies_progress"
+				position = { x = 0 y = 175}
+				iconType = {
+					name = "supplies_progressbar"
+					spriteType = "GFX_gui_BGD_ring_progressbar"
+				}
+				instantTextBoxType = {
+					name = "supplies_progresstext"
+					font = "VCR02_26"
+					text = [?supplies_progress_var|Y]
+					position = { x = -33 y = 55}
+					format = center
+				}
+				instantTextBoxType = {
+					name = "supplies_text"
+					font = "VCR02_26"
+					text = supplies_progress
+					position = { x = -33 y = 135}
+					format = center
+				}
+			}
+		}
+
+
+		
+		
+		
+		containerWindowType = {
+			name = "light"
+			position = {
+				x = 455
+				y = 203
+			}
+			iconType = {
+				name = "warning_light1"
+				spriteType = "GFX_gui_BGD_warning"
+				scale = 0.4
+			}
+			iconType = {
+				name = "warning_light2"
+				spriteType = "GFX_gui_BGD_warning"
+				scale = 0.4
+				position = { x = 13 y = 160 }
+			}
+		}
+		
+	}
+}

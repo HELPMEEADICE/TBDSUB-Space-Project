@@ -1,0 +1,14 @@
+decisions_BGD_space_second = {
+	priority = 100005
+	icon = GFX_gui_ppp_party_small
+	
+	
+	visible = {
+		has_country_flag = space_second_up
+		NOT = {
+			has_country_flag = space_third_step
+		}
+	}
+	
+	scripted_gui = bgd_space_second_guis
+}
