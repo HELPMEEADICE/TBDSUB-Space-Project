@@ -63,12 +63,38 @@ spriteTypes = {
 		textureFile = "gfx\interface\BGD\space_gui\second.png"
 	}
 	spriteType = {
+		name = "GFX_gui_BGD_space_phase_3_double"
+		textureFile = "gfx\interface\BGD\space_gui\third.png"
+	}
+	spriteType = {
+		name = "GFX_gui_BGD_space_phase_3_only"
+		textureFile = "gfx\interface\BGD\space_gui\third_only.png"
+	}
+	spriteType = {
+		name = "GFX_gui_BGD_space_ship"
+		textureFile = "gfx\interface\BGD\space_gui\ship.png"
+	}
+	spriteType = {
+		name = "GFX_gui_BGD_space_ship_landing"
+		textureFile = "gfx\interface\BGD\space_gui\ship_landing.png"
+	}
+	spriteType = {
+		name = "GFX_gui_BGD_space_ship_only"
+		textureFile = "gfx\interface\BGD\space_gui\only_ship.png"
+	}
+
+	spriteType = {
 		name = "GFX_BGD_start_event"
 		textureFile = "gfx\interface\BGD\space_gui\romulus_project.png"
 	}
 	spriteType = {
 		name = "GFX_BGD_info"
 		textureFile = "gfx\interface\BGD\space_gui\info.png"
+	}
+
+	spriteType = {
+		name = "GFX_Mare_Tranquillitatis"
+		textureFile = "gfx\interface\BGD\space_gui\Mare_Tranquillitatis.png"
 	}
 	
 }

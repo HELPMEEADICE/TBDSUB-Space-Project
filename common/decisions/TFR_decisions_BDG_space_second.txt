@@ -10,9 +10,225 @@ decisions_BGD_space_second = {
 		visible = {
 		}
 		available = {
-			has_country_flag = space_second_over
+			check_variable = { rocket_progress_var > 99 }
+			check_variable = { human_progress_var > 99 }
+			check_variable = { supplies_progress_var > 99 }
+		}
+		complete_effect = { 
+			country_event = { id = SPACE.11 }
+		}
+	}
+	BGD_building_rocket = {
+		icon = GFX_Banned_Moderates
+		name = BGD_building_rocket
+		days_remove = 100
+		fire_only_once = yes
+		cost = 500
+		allowed = {
+		}
+		visible = {
+			NOT = {
+				has_country_flag = rocket_build_complete
+			}
+		}
+		available = {
+		}
+		complete_effect = {
+			set_country_flag = in_building_rocket
+		}
+		remove_effect = {
+			clr_country_flag = in_building_rocket
+			set_country_flag = rocket_build_complete
+			add_to_variable = { rocket_progress_var = 1 }
+		}
+	}
+	BGD_filling_rocket_supplies = {
+		icon = GFX_Banned_Moderates
+		name = BGD_filling_rocket_supplies
+		days_remove = 100
+		fire_only_once = yes
+		cost = 200
+		allowed = {
+			has_country_flag = rocket_build_complete
+		}
+		visible = {
+		}
+		available = {
+			has_country_flag = rocket_build_complete
+		}
+		complete_effect = {
+			set_country_flag = in_filling_rocket_supplies
+		}
+		remove_effect = {
+			clr_country_flag = in_filling_rocket_supplies
+			set_country_flag = filling_rocket_supplies_complete
+			add_to_variable = { deltav = 55 }
+			add_to_variable = { supplies_progress_var = 1 }
+		}
+	}
+
+
+	BGD_astronaut_selection = {
+		icon = GFX_Banned_Moderates
+		name = BGD_astronaut_selection
+		days_remove = 25
+		fire_only_once = yes
+		cost = 100
+		allowed = {
+		}
+		visible = {
+		}
+		available = {
 		}
 		complete_effect = {
 		}
+		remove_effect = {
+			country_event = { id = SPACE.1 }
+		}
 	}
+
+
+	BGD_manned_centrifuge = {
+		icon = GFX_Banned_Moderates
+		name = BGD_manned_centrifuge
+		days_remove = 25
+		fire_only_once = yes
+		cost = 50
+		allowed = {
+		}
+		visible = {
+			has_country_flag = astronaut_selection
+			NOT = {
+				has_country_flag = staff_training
+			}
+		}
+		available = {
+			has_country_flag = astronaut_selection
+			NOT = {
+				has_country_flag = staff_training
+			}
+		}
+		complete_effect = {
+			set_country_flag = staff_training
+		}
+		remove_effect = {
+			clr_country_flag = staff_training
+			country_event = { id = SPACE.4 }
+		}
+	}
+	
+	BGD_anti_weightlessness_training = {
+		icon = GFX_Banned_Moderates
+		name = BGD_anti_weightlessness_training
+		days_remove = 25
+		fire_only_once = yes
+		cost = 50
+		allowed = {
+		}
+		visible = {
+			has_country_flag = astronaut_selection
+			NOT = {
+				has_country_flag = staff_training
+			}
+		}
+		available = {
+			has_country_flag = astronaut_selection
+			NOT = {
+				has_country_flag = staff_training
+			}
+		}
+		complete_effect = {
+			set_country_flag = staff_training
+		}
+		remove_effect = {
+			clr_country_flag = staff_training
+			country_event = { id = SPACE.5 }
+		}
+	}
+	BGD_temperature_training = {
+		icon = GFX_Banned_Moderates
+		name = BGD_temperature_training
+		days_remove = 25
+		fire_only_once = yes
+		cost = 50
+		allowed = {
+		}
+		visible = {
+			has_country_flag = astronaut_selection
+			NOT = {
+				has_country_flag = staff_training
+			}
+		}
+		available = {
+			has_country_flag = astronaut_selection
+			NOT = {
+				has_country_flag = staff_training
+			}
+		}
+		complete_effect = {
+			set_country_flag = staff_training
+		}
+		remove_effect = {
+			clr_country_flag = staff_training
+			country_event = { id = SPACE.6 }
+		}
+	}
+	BGD_simulator_training = {
+		icon = GFX_Banned_Moderates
+		name = BGD_simulator_training
+		days_remove = 25
+		fire_only_once = yes
+		cost = 50
+		allowed = {
+		}
+		visible = {
+			has_country_flag = astronaut_selection
+			NOT = {
+				has_country_flag = staff_training
+			}
+		}
+		available = {
+			has_country_flag = astronaut_selection
+			NOT = {
+				has_country_flag = staff_training
+			}
+		}
+		complete_effect = {
+			set_country_flag = staff_training
+		}
+		remove_effect = {
+			clr_country_flag = staff_training
+			country_event = { id = SPACE.9 }
+		}
+	}
+	BGD_space_EVA_training = {
+		icon = GFX_Banned_Moderates
+		name = BGD_space_EVA_training
+		days_remove = 25
+		fire_only_once = yes
+		cost = 50
+		allowed = {
+		}
+		visible = {
+			has_country_flag = astronaut_selection
+			NOT = {
+				has_country_flag = staff_training
+			}
+		}
+		available = {
+			has_country_flag = astronaut_selection
+			NOT = {
+				has_country_flag = staff_training
+			}
+		}
+		complete_effect = {
+			set_country_flag = staff_training
+		}
+		remove_effect = {
+			clr_country_flag = staff_training
+			country_event = { id = SPACE.10 }
+		}
+	}
+
+	
 } 

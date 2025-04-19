@@ -1,0 +1,81 @@
+guiTypes = {
+	containerWindowType = {
+		name = "bgd_space_third_guis"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 100%
+			height = 750
+		}
+
+		iconType = {
+			name = "background_1"
+			#spriteType = GFX_gui_BGD_space_phase_3_only
+			position = {
+				x = -6
+				y = -17
+			}
+		}
+
+		iconType = {
+			name = "info"
+			spriteType = "GFX_BGD_info"
+			scale = 0.8
+			position = {
+				x = 460
+				y = 720
+			}
+			pdx_tooltip = "desc_deltav"
+		}
+		instantTextBoxType = {
+			name = "deltav"
+			font = "VCR02_26"
+			text = Δv:[?deltav|Y]m/s
+			position = { x = 285 y = 723 }
+			maxWidth = 170
+			format = right
+		}
+		instantTextBoxType = {
+			name = "orbit"
+			text = "[BGD_space_orbit]"
+			font = "VCR02_26"
+			position = {
+				x = 5
+				y = 320
+			}
+		}
+
+
+		iconType = {
+			name = "spaceship"
+			position = {
+				x = 150
+				y = 140
+			}
+		}
+
+		containerWindowType = {
+			name = "landing_window"
+			position = {
+				x = 3
+				y = 530
+			}
+			instantTextBoxType = {
+				name = "landing_text"
+				text = "BDG_landing_geo"
+				font = "VCR02_26"
+			}
+			iconType = {
+				name = "Mare_Tranquillitatis"
+				spriteType = "GFX_Mare_Tranquillitatis"
+				scale = 0.4
+				position = {
+					x = 0
+					y = 30
+				}
+			}
+		}
+	}
+}

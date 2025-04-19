@@ -12,3 +12,352 @@ country_event = {
 		set_country_flag = space_up
 	}
 }
+country_event = {
+	#选定人选
+	id = SPACE.1
+	title = SPACE.1
+	desc = SPACE.1.d
+	picture = GFX_BGD_start_event
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = SPACE.1.o
+		country_event = { id = SPACE.2 }
+	}
+}
+country_event = {
+	#反应
+	id = SPACE.2
+	title = SPACE.2
+	desc = SPACE.2.d
+	picture = GFX_BGD_start_event
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = SPACE.2.o
+		country_event = { id = SPACE.3 }
+	}
+}
+country_event = {
+	#质问
+	id = SPACE.3
+	title = SPACE.3
+	desc = SPACE.3.d
+	picture = GFX_BGD_start_event
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = SPACE.3.o
+		set_country_flag = astronaut_selection
+		add_to_variable = { human_progress_var = 30 }
+	}
+}
+country_event = {
+	#载人离心机
+	id = SPACE.4
+	title = SPACE.4
+	desc = SPACE.4.d
+	picture = GFX_BGD_start_event
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = SPACE.4.o
+		add_to_variable = { human_progress_var = 10 }
+	}
+}
+country_event = {
+	#载人离心机
+	id = SPACE.4
+	title = SPACE.4
+	desc = SPACE.4.d
+	picture = GFX_BGD_start_event
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = SPACE.4.o
+		add_to_variable = { human_progress_var = 15 }
+	}
+}
+country_event = {
+	#抗失重训练
+	id = SPACE.5
+	title = SPACE.5
+	desc = SPACE.5.d
+	picture = GFX_BGD_start_event
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = SPACE.5.o
+		add_to_variable = { human_progress_var = 15 }
+	}
+}
+
+country_event = {
+	#温差训练
+	id = SPACE.6
+	title = SPACE.6
+	desc = SPACE.6.d
+	picture = GFX_BGD_start_event
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = SPACE.6.o
+		country_event = { id = SPACE.7 }
+	}
+}
+country_event = {
+	#温差训练
+	id = SPACE.7
+	title = SPACE.7
+	desc = SPACE.7.d
+	picture = GFX_BGD_start_event
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = SPACE.7.o
+		country_event = { id = SPACE.8 }
+	}
+}
+country_event = {
+	#温差训练
+	id = SPACE.8
+	title = SPACE.8
+	desc = SPACE.8.d
+	picture = GFX_BGD_start_event
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = SPACE.8.o
+		add_to_variable = { human_progress_var = 15 }
+	}
+}
+
+country_event = {
+	#模拟器训练
+	id = SPACE.9
+	title = SPACE.9
+	desc = SPACE.9.d
+	picture = GFX_BGD_start_event
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = SPACE.9.o
+		add_to_variable = { human_progress_var = 15 }
+	}
+}
+
+country_event = {
+	#燃料管理和轨道力学实操训练
+	id = SPACE.10
+	title = SPACE.10
+	desc = SPACE.10.d
+	picture = GFX_BGD_start_event
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = SPACE.10.o
+		add_to_variable = { human_progress_var = 15 }
+	}
+}
+
+country_event = {
+	#准备发射
+	id = SPACE.11
+	title = SPACE.11
+	desc = SPACE.11.d
+	picture = GFX_BGD_start_event
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = SPACE.11.o
+		set_country_flag = space_third_step
+		
+	}
+}
+country_event = {
+	#发射
+	id = SPACE.12
+	title = SPACE.12
+	desc = SPACE.12.d
+	picture = GFX_BGD_start_event
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = SPACE.12.o
+		set_country_flag = launch
+		set_variable = { deltav = 9310 }
+		
+	}
+}
+
+country_event = {
+	#转移
+	id = SPACE.13
+	title = SPACE.13
+	desc = SPACE.13.d
+	picture = GFX_BGD_start_event
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = SPACE.13.o
+		country_event = { id = SPACE.14 }
+		set_variable = { deltav = 1098.58 }
+	}
+}
+country_event = {
+	#回望蓝色摇篮
+	id = SPACE.14
+	title = SPACE.14
+	desc = SPACE.14.d
+	picture = GFX_BGD_start_event
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = SPACE.14.o
+		clr_country_flag = launch
+		set_country_flag = go_moon
+	}
+}
+
+country_event = {
+	#泊入月轨
+	id = SPACE.15
+	title = SPACE.15
+	desc = SPACE.15.d
+	picture = GFX_BGD_start_event
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = SPACE.15.o
+		clr_country_flag = go_moon
+		set_country_flag = landing_moon
+		set_variable = { deltav = 484.12 }
+	}
+}
+
+country_event = {
+	#着落月球 - 分离
+	id = SPACE.16
+	title = SPACE.16
+	desc = SPACE.16.d
+	picture = GFX_BGD_start_event
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = SPACE.16.o
+		country_event = { id = SPACE.17 }
+	}
+}
+country_event = {
+	#着落月球
+	id = SPACE.17
+	title = SPACE.17
+	desc = SPACE.17.d
+	picture = GFX_BGD_start_event
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = SPACE.17.o
+		set_country_flag = bang_landing_moon
+	}
+}
+
+country_event = {
+	#科学研究
+	id = SPACE.18
+	title = SPACE.18
+	desc = SPACE.18.d
+	picture = GFX_BGD_start_event
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = SPACE.18.o
+	}
+}
+
+country_event = {
+	#返航
+	id = SPACE.18
+	title = SPACE.18
+	desc = SPACE.18.d
+	picture = GFX_BGD_start_event
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = SPACE.18.o
+	}
+}
+
+country_event = {
+	#返航
+	id = SPACE.19
+	title = SPACE.19
+	desc = SPACE.19.d
+	picture = GFX_BGD_start_event
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = SPACE.19.o
+		clr_country_flag = landing_moon
+		set_country_flag = back_earth
+		set_variable = {
+			deltav = 918.53
+		}
+	}
+}
+
+country_event = {
+	#入地
+	id = SPACE.20
+	title = SPACE.20
+	desc = SPACE.20.d
+	picture = GFX_BGD_start_event
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = SPACE.20.o
+		country_event = { id = SPACE.21 }
+	}
+}
+country_event = {
+	#入地
+	id = SPACE.21
+	title = SPACE.21
+	desc = SPACE.21.d
+	picture = GFX_BGD_start_event
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = SPACE.21.o
+		country_event = { id = SPACE.22 }
+	}
+}
+
+country_event = {
+	#入地
+	id = SPACE.22
+	title = SPACE.22
+	desc = SPACE.22.d
+	picture = GFX_BGD_start_event
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = SPACE.22.o
+		#clr_country_flag = back_earth
+		#set_country_flag = landing_earth
+	}
+}
+
+country_event = {
+	#新闻
+	id = SPACE.23
+	title = SPACE.23
+	desc = SPACE.23.d
+	picture = GFX_BGD_start_event
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = SPACE.23.o
+		set_country_flag = bgd_moon_over
+	}
+}

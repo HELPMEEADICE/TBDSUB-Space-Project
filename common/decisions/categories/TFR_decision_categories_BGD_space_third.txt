@@ -1,0 +1,14 @@
+decisions_BGD_space_third = {
+	priority = 100005
+	icon = GFX_gui_ppp_party_small
+	
+	
+	visible = {
+		has_country_flag = space_third_step
+		NOT = {
+			has_country_flag = bgd_moon_over
+		}
+	}
+	
+	scripted_gui = bgd_space_third_guis
+}

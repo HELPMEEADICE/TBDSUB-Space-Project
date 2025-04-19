@@ -1,0 +1,17 @@
+on_actions = {
+    on_daily_BGD = {
+        effect = {
+			if = {
+				limit = { has_country_flag = in_building_rocket }
+			add_to_variable = { rocket_progress_var = 1 }
+			}
+			
+			if = {
+				limit = { has_country_flag = in_filling_rocket_supplies }
+			add_to_variable = { supplies_progress_var = 1 }
+			add_to_variable = { deltav = 220 }
+			}
+			
+		}
+	}
+}

@@ -1,0 +1,68 @@
+defined_text = {
+	name = BGD_space_phase_3
+	text = {
+		trigger = {
+			has_country_flag = back_earth
+		}
+		localization_key = GFX_gui_BGD_space_phase_3_only
+	}
+	text = {
+		localization_key = GFX_gui_BGD_space_phase_3_double
+	}
+
+}
+defined_text = { 
+	name = BGD_space_ship
+	text = {
+		trigger = {
+			has_country_flag = back_earth
+		}
+		localization_key = GFX_gui_BGD_space_ship_only
+	}
+	text = {
+		trigger = {
+			has_country_flag = landing_moon
+		}
+		localization_key = GFX_gui_BGD_space_ship_landing
+	}
+	text = {
+		localization_key = GFX_gui_BGD_space_ship
+	}
+}
+
+defined_text = { 
+	name = BGD_space_orbit
+	text = {
+		trigger = {
+			has_country_flag = landing_earth
+		}
+		localization_key = BDG_BACK
+	}
+	text = {
+		trigger = {
+			has_country_flag = back_earth
+		}
+		localization_key = BGD_TLI_B
+	}
+	text = {
+		trigger = {
+			has_country_flag = landing_moon
+		}
+		localization_key = BGD_LNO
+	}
+	text = {
+		trigger = {
+			has_country_flag = go_moon
+		}
+		localization_key = BGD_TLI_O
+	}
+	text = {
+		trigger = {
+			has_country_flag = launch
+		}
+		localization_key = BGD_LTO
+	}
+	text = {
+		localization_key = BGD_LAND
+	}
+}

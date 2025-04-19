@@ -1,0 +1,158 @@
+decisions_BGD_space_third = {
+    BGD_launch = {
+		activation = {
+			has_country_flag = space_third_step
+		}
+		available = {
+			always = no
+		}
+
+		is_good = no
+		fire_only_once = yes
+
+		timeout_effect = {
+			country_event = { id = SPACE.12 }
+			activate_mission = BGD_TLI
+		}
+
+		days_mission_timeout = 5
+	}
+
+	BGD_TLI = {
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+
+		is_good = no
+		fire_only_once = yes
+		
+
+		timeout_effect = {
+			country_event = { id = SPACE.13 }
+			activate_mission = BGD_LNO_O
+		}
+
+		days_mission_timeout = 10
+	}
+
+	BGD_LNO_O = {
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+
+		is_good = no
+		fire_only_once = yes
+		
+
+		timeout_effect = {
+			country_event = { id = SPACE.15 }
+			activate_mission = BGD_Land_Moon
+		}
+
+		days_mission_timeout = 10
+	}
+
+	BGD_Land_Moon = {
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+
+		is_good = no
+		fire_only_once = yes
+		
+
+		timeout_effect = {
+			country_event = { id = SPACE.16 }
+			activate_mission = BGD_Moon_Research
+		}
+
+		days_mission_timeout = 10
+	}
+
+	BGD_Moon_Research = {
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+
+		is_good = no
+		fire_only_once = yes
+		
+
+		timeout_effect = {
+			country_event = { id = SPACE.18 }
+			activate_mission = BGD_Back_Space
+		}
+
+		days_mission_timeout = 10
+	}
+
+	BGD_Back_Space = {
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+
+		is_good = no
+		fire_only_once = yes
+		
+
+		timeout_effect = {
+			country_event = { id = SPACE.19 }
+			activate_mission = BGD_Back_Earth
+		}
+
+		days_mission_timeout = 10
+	}
+
+	BGD_Back_Earth = {
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+
+		is_good = no
+		fire_only_once = yes
+		
+		timeout_effect = {
+			country_event = { id = SPACE.20 }
+			activate_mission = BGD_News_Space
+		}
+
+		days_mission_timeout = 10
+	}
+
+	BGD_News_Space = {
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+
+		is_good = no
+		fire_only_once = yes
+		
+		timeout_effect = {
+			country_event = { id = SPACE.23 }
+		}
+
+		days_mission_timeout = 5
+	}
+	
+} 

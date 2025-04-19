@@ -1,0 +1,18 @@
+scripted_gui = {
+	bgd_space_third_guis = {
+		context_type = decision_category
+		window_name = "bgd_space_third_guis"
+		
+		properties = {
+			background_1 = {
+				image = "[BGD_space_phase_3]"
+			}
+			spaceship = {
+				image = "[BGD_space_ship]"
+			}
+		}
+		triggers = {
+			landing_window_visible = { has_country_flag = bang_landing_moon }
+		}
+	}
+}

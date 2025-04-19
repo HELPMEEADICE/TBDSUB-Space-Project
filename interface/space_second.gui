@@ -32,8 +32,8 @@ guiTypes = {
 			spriteType = "GFX_BGD_info"
 			scale = 0.8
 			position = {
-				x = 400
-				y = 700
+				x = 460
+				y = 720
 			}
 			pdx_tooltip = "desc_deltav"
 		}
@@ -41,8 +41,9 @@ guiTypes = {
 			name = "deltav"
 			font = "VCR02_26"
 			text = Δv:[?deltav|Y]m/s
-			position = { x = 265 y = 700 }
-			maxWidth = 135
+			position = { x = 285 y = 723 }
+			maxWidth = 170
+			format = right
 		}
 
 		#环状进度条
@@ -117,6 +118,18 @@ guiTypes = {
 				spriteType = "GFX_gui_BGD_warning"
 				scale = 0.4
 				position = { x = 13 y = 160 }
+			}
+			iconType = {
+				name = "warning_light3"
+				spriteType = "GFX_gui_BGD_warning"
+				scale = 0.4
+				position = { x = -30 y = 337 }
+			}
+			iconType = {
+				name = "warning_light4"
+				spriteType = "GFX_gui_BGD_warning"
+				scale = 0.4
+				position = { x = -150 y = 462 }
 			}
 		}
 		
