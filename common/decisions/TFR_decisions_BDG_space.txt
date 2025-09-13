@@ -265,6 +265,7 @@ decisions_BGD_space = {
 		remove_effect = {
 			add_to_variable = { rocket_complete_var = 10 }
 			set_country_flag = rocket_complete
+			complete_national_focus = BGD_rocket_architecture
 		}
 	}
 
@@ -504,6 +505,7 @@ decisions_BGD_space = {
 		remove_effect = {
 			add_to_variable = { sgp_base_complete_var = 10 }
 			set_country_flag = base_complete
+			complete_national_focus = BGD_sasa_building
 		}
 	}
 } 

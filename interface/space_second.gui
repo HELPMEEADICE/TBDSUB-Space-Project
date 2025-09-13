@@ -41,8 +41,8 @@ guiTypes = {
 			name = "deltav"
 			font = "VCR02_26"
 			text = Δv:[?deltav|Y]m/s
-			position = { x = 285 y = 723 }
-			maxWidth = 170
+			position = { x = 265 y = 723 }
+			maxWidth = 190
 			format = right
 		}
 

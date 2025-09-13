@@ -62,7 +62,7 @@ decisions_BGD_space_second = {
 		remove_effect = {
 			clr_country_flag = in_filling_rocket_supplies
 			set_country_flag = filling_rocket_supplies_complete
-			add_to_variable = { deltav = 55 }
+			add_to_variable = { deltav = 185 }
 			add_to_variable = { supplies_progress_var = 1 }
 		}
 	}

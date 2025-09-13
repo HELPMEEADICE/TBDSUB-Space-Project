@@ -18,6 +18,7 @@ BGD_space_EVA_training: "燃料管理和轨道力学实操训练"
 
 decisions_BGD_space: ""罗穆路斯"计划 - 第一阶段"
 decisions_BGD_space_second: ""罗穆路斯"计划 - 第二阶段"
+decisions_BGD_space_third: ""罗穆路斯"计划 - 第三阶段"
 rocket_in_research: "正在设计火箭..."
 BGD_rocket_system_architecture: "火箭 - 总体构型设计"
 BGD_rocket_propulsion: "火箭 - 推进系统"

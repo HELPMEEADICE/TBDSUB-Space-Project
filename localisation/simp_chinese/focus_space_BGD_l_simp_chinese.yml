@@ -1,0 +1,21 @@
+﻿l_simp_chinese:
+
+BGD_rocket_architecture: "怎么画火箭不爆炸？"
+BGD_sasa_building: "在赤道边上盖个大弹弓"
+BGD_focus_astronaut_selection: "已经决定了！你们来登陆月球！"
+BGD_focus_manned_centrifuge: "今天也在高速旋转中"
+BGD_focus_anti_weightlessness_training: "地心引力你别闹！"
+BGD_focus_temperature_training: "一秒进蒸锅，一秒进冰箱"
+BGD_focus_simulator_training: "先在地球上摔个够"
+BGD_focus_space_EVA_training: "在太空里走直线超难啦！"
+BGD_focus_landing_moon: "月亮上开演唱会！"
+
+BGD_rocket_architecture_desc: "每一支火箭，都是从一张白纸开始的。我们正在一边画草图，一边想着怎么不炸"
+BGD_sasa_building_desc: "新加坡：纬度小，热情大！我们要在这里建一座让地球引力瑟瑟发抖的航天基地！未来，这里将成为梦想起飞的第一跳台！"
+BGD_focus_astronaut_selection_desc: "经过数轮严苛的选拔（主要是石头剪刀布和才艺展示），我们的英雄们终于集结完毕！是时候让全世界见识到什么叫——梦想冲出地球了！"
+BGD_focus_manned_centrifuge_desc: "想成为宇航员？先体验什么叫做“头晕到怀疑人生”！离心机在咆哮，我们在咆哮，但没关系，坚持住，梦想就在那边！"
+BGD_focus_anti_weightlessness_training_desc: "重力？不存在的！为了在无重状态下打鼓跳舞（？）我们的宇航员们正在努力挣脱地球的束缚！（提醒：请勿擅自起飞）"
+BGD_focus_temperature_training_desc: "月球上，白天可以煎蛋，晚上可以冻鱼。所以，为了不被热死或冻成冰棍，我们展开了魔鬼式温差训练！带好你的保温杯！"
+BGD_focus_simulator_training_desc: "不摔机，不是模拟。不断失败，不断重来。就算手滑撞断了着陆器的腿，我们也能用胶带和梦想修好它！（理论上）"
+BGD_focus_space_EVA_training_desc: "燃料怎么省？轨道怎么拐？别问，问就是边学边飞！在这里，每一滴推进剂都贵得能拿去开演唱会，所以必须飞得又准又帅！"
+BGD_focus_landing_moon_desc: "登月不是简单的“跳一跳”——要准确，要优雅，要降落得像跳完最后一拍的完美ending pose！准备好，让月亮也为我们鼓掌吧！"

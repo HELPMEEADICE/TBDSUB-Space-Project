@@ -49,6 +49,7 @@ country_event = {
 	option = {
 		name = SPACE.3.o
 		set_country_flag = astronaut_selection
+		complete_national_focus = BGD_focus_astronaut_selection
 		add_to_variable = { human_progress_var = 30 }
 	}
 }
@@ -62,20 +63,9 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = SPACE.4.o
-		add_to_variable = { human_progress_var = 10 }
-	}
-}
-country_event = {
-	#载人离心机
-	id = SPACE.4
-	title = SPACE.4
-	desc = SPACE.4.d
-	picture = GFX_BGD_start_event
-	fire_only_once = yes
-	is_triggered_only = yes
-	option = {
-		name = SPACE.4.o
 		add_to_variable = { human_progress_var = 15 }
+		#set_country_flag = manned_centrifuge
+		complete_national_focus = BGD_focus_manned_centrifuge
 	}
 }
 country_event = {
@@ -89,6 +79,8 @@ country_event = {
 	option = {
 		name = SPACE.5.o
 		add_to_variable = { human_progress_var = 15 }
+		#set_country_flag = anti_weightlessness_training
+		complete_national_focus = BGD_focus_anti_weightlessness_training
 	}
 }
 
@@ -129,6 +121,8 @@ country_event = {
 	option = {
 		name = SPACE.8.o
 		add_to_variable = { human_progress_var = 15 }
+		#set_country_flag = temperature_training
+		complete_national_focus = BGD_focus_temperature_training
 	}
 }
 
@@ -143,6 +137,8 @@ country_event = {
 	option = {
 		name = SPACE.9.o
 		add_to_variable = { human_progress_var = 15 }
+		#set_country_flag = simulator_training	
+		complete_national_focus = BGD_focus_simulator_training
 	}
 }
 
@@ -157,6 +153,8 @@ country_event = {
 	option = {
 		name = SPACE.10.o
 		add_to_variable = { human_progress_var = 15 }
+		#set_country_flag = EVA_training
+		complete_national_focus = BGD_focus_space_EVA_training
 	}
 }
 
@@ -259,6 +257,7 @@ country_event = {
 	option = {
 		name = SPACE.17.o
 		set_country_flag = bang_landing_moon
+		complete_national_focus = BGD_focus_landing_moon
 	}
 }
 
